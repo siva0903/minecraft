@@ -11,4 +11,4 @@ COPY server.jar /usr/local/
 COPY forge-1.17.1-37.0.104-installer.jar /usr/local/mods
 COPY  /usr/local/mods
 WORKDIR /usr/local
-ENTRYPOINT java -Xmx2G -Xms2G -jar minecraft_server.1.16.5.jar nogui
+ENTRYPOINT java -Xmx2G -Xms2G -jar server.jar nogui -e EULA-true
